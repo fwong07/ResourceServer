@@ -29,7 +29,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 					//.hasAuthority("SCOPE_profile")
 					.hasRole("developer")
 					//.hasAnyAuthority("ROLE_developer")
-					//.hasAnyRole("devleoper","user")
+					//.hasAnyRole("developer","user")
 				.anyRequest().authenticated()
 				.and()
 			.oauth2ResourceServer()
